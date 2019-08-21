@@ -4,6 +4,9 @@ body {
     background: #777;
     width: 960px;
     font-size: 18px;
+    margin: 120px;
+    /* ^ margin parameter ineffective, need to center but not sure how */
+    margin-top: 10px;
 }
 
 header {
@@ -27,25 +30,45 @@ nav {
 }
 
 section {
+    float: left;
     width: 550px;
     padding: 10px;
     border: #777;
+    margin-bottom: 10px;
+
 }
 
 article {
     padding: 10px;
-    
+    border: 10px;
+    background-color: #777;
+    color: #ebebeb;
+}
+
+.container {
+    border: 10px;
+    padding: 10px;
+    background: #ebebeb;
+    color: #777;
+}
+
+/* CONTAINERS DIFFERENT SIZES, WHY? */
+
+#container_1 {
+    margin-bottom: 10px;
 }
 
 
 aside {
-    width: 410px;
+    float: right;
+    width: 350px;
     padding: 10px;
+    height: 320px;
 }
 
 footer {
-    
+    clear: both;
     margin-top: 10px;
     padding: 20px;
-    
+    overflow: auto;
 }
